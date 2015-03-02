@@ -1,10 +1,24 @@
 #Parameters
-$vSphereHost = "172.16.13.124"
-$esx = "172.16.13.13"
-$User = "root"
-$Password = "vmware"
-$target = "172.16.13.228"
-$shortname = "esx.test.melol"
+#$vSphereHost = "172.16.13.124"
+#$esx = "172.16.13.13"
+#$User = "root"
+#$Password = "vmware"
+#$target = "172.16.13.228"
+#$shortname = "esx.test.melol"
+Param(
+  [Parameter(Position=0)]
+  [string]$vSphereHost = "172.16.13.124",
+  [Parameter(Position=1)]
+  [string]$esx = "172.16.13.13",
+  [Parameter(Position=2)]
+  [string]$User = "root",
+  [Parameter(Position=3)]
+  [string]$Password = "vmware",
+  [Parameter(Position=4)]
+  [string]$target = "172.16.13.228",
+  [Parameter(Position=5)]
+  [string]$shortname = "esx.test.melolka"
+ )
 
 
 #Connect
